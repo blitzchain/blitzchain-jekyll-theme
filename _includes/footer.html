@@ -1,0 +1,46 @@
+<footer id="site-footer">
+    <div id="footer-wrapper" class="wrapper">
+        <div>
+            {% include site-logo.html %}
+        </div>
+        <div class="footer-menus">
+            <div>
+                <h3>Products</h3>
+                <nav>
+                    <ul>
+                        {% for item in site.data.navigation-menus.primary-menu %}
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-447">
+                                <a href="{{ item.url }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %} 
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h3>Developers</h3>
+                <nav>
+                    <ul>
+                        {% for item in site.data.navigation-menus.primary-menu %}
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-447">
+                                <a href="{{ item.url }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %} 
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h3>Company</h3>
+                <nav>
+                    <ul>
+                        {% for item in site.data.navigation-menus.primary-menu %}
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-447">
+                                <a href="{{ item.url }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %} 
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div></div>
+    </div>
+</footer>
